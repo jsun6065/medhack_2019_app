@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medhack_2019_app/camera_page.dart';
 import 'tab_change1.dart';
 class Home extends StatefulWidget {
   @override
@@ -9,7 +10,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [TabChange1(Colors.white),
-    TabChange1(Colors.blue),
+    CameraPage(),
     TabChange1(Colors.red)];
   @override
   Widget build(BuildContext context) {
